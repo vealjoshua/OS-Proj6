@@ -1,0 +1,44 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@ * @;
+
+
+1.1
+date	2016.12.10.07.11.17;	author o1-sangha;	state Exp;
+branches;
+next	;
+
+
+desc
+@making back up
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@#ifndef USER_H
+#define USER_H
+
+#include "share.h"
+
+void INThandler(int sig); // for the ctrl^C
+void TimeHandler(int sig); // for alarm (z)
+void sigDie(int sig);  // precations 
+void sigDie2(int sig);
+void AddTime(int addNano);
+void AttachToMem(); //all the code for the user to attached to memory 
+void addToarr(int i);
+int randDeath(int checkTime, int startTime, int pcbLocation); //makes checks to see if the user needs to die
+
+int random_number(int min_num, int max_num); // getting randTime
+void releaseMem();
+
+
+
+#endif
+@

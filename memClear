@@ -1,0 +1,1 @@
+killall -u o1-sangha -KILL oss user; ipcrm -M 1991 -M 1994 -M1990 -Q 1992;
